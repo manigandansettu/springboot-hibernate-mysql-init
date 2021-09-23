@@ -6,12 +6,13 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Repository
-@Transactional
+@Service
 public class ActorDAOImpl implements ActorDAO {
 
     private SessionFactory sessionFactory;

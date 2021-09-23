@@ -26,7 +26,7 @@ public class ActorController {
     }
 
     @PostMapping
-    public String saveActor(@RequestBody Actor actor){
+    public String saveActor(Actor actor){
         actorService.saveActor(actor);
         return "success";
     }
